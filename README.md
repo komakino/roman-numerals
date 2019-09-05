@@ -39,4 +39,8 @@ $integer = RomanNumerals::from('DCLXVI'); // returns 666
 ### v1.0.0
 * Initial public release
 ### v1.0.1
+* New README file
+### v1.0.2
+* Added license and author to composer.json
+### v1.0.3
 * Added LICENSE file
