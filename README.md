@@ -6,6 +6,12 @@ Handles numbers from 0 to 3999. For 0 the string 'nulla' is used.
 
 ## Installation
 
+### Composer Installation
+```
+$ composer require komakino/roman-numerals
+```
+#### Manual Installation
+
 To add this package as a dependency to your project, simply add a dependency on `komakino/roman-numerals` to your project's `composer.json` file.
 ```json
     {
@@ -14,6 +20,12 @@ To add this package as a dependency to your project, simply add a dependency on 
         }
     }
 ```
+Then, run:
+```
+$ composer update
+```
+to install the package.
+
 ## Usage
 
 ```php
@@ -27,7 +39,7 @@ $integer = RomanNumerals::from('DCLXVI'); // returns 666
 
 * string **to**($integer)
     * Converts integer to roman numerals
-    * If integer is negativ, an **OutOfBoundsException** is thrown
+    * If integer is negative, an **OutOfBoundsException** is thrown
     * If integer is larger or equal to 4000, an **OutOfBoundsException** is thrown
 
 * string **from**($string)
